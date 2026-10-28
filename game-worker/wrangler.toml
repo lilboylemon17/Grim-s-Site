@@ -1,0 +1,6 @@
+name = "grim-games"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+[vars]
+SUPABASE_URL = "https://YOUR_PROJECT.supabase.co"
+SITE_ORIGIN = "https://YOUR_SITE.vercel.app"
