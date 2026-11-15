@@ -32,3 +32,7 @@ Enter metadata, choose an optional image and VTT subtitles, then save a draft to
 `npm run check` checks TypeScript. `npm run build` builds the production app. After configuring cloud services, manually verify: unauthorized writes fail; admin upload and draft preview; ZIP asset paths; publish/unpublish; film seek/volume/speed/subtitles; replacement; ordering; delete/cleanup; mobile layouts; reduced motion. Live account integration and browser visual verification were not performed in the authoring environment.
 
 Reference: [Next.js route handlers](https://nextjs.org/docs/app/api-reference/file-conventions/route), [Supabase JavaScript authentication](https://supabase.com/docs/reference/javascript/auth).
+
+## Projects
+The top-right Projects tab lists published projects. In GRIM Manager, open Projects and choose New project. Add download files, descriptions, an optional cover, and GIF/WebP screenshots or MP4/WebM recordings. Save a draft to preview, then publish. Files download through persistent Supabase Storage with their original filenames. Projects support up to 20 downloads and 12 preview files, subject to your storage plan's per-file limit. Run supabase/projects-setup.sql once in an existing database before using this section. It adds project metadata to the existing content table and retains its administrator policies.
+
